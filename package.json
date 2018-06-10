@@ -1,0 +1,19 @@
+{
+  "name": "five-star-rentals",
+  "version": "1.0.0",
+  "description": "five-star-rentals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qianabarton/FIVE-STAR-Rentals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qianabarton/FIVE-STAR-Rentals/issues"
+  },
+  "homepage": "https://github.com/qianabarton/FIVE-STAR-Rentals#readme"
+}
