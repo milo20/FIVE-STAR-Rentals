@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(114, 114, 114);
+    background-color #fff;
 }
 
 
@@ -7,9 +7,7 @@ body {
 
 h1 {}
 
-h2 {
-    text-align: center;
-}
+h2 {}
 
 h3 {}
 
@@ -75,10 +73,16 @@ h3 {}
     background-color: yellow;
 }
 
-#our-mission {
+#mission {
     background-color: burlywood;
 }
 
 #apply {
     background-color: royalblue;
+}
+
+#contact {}
+
+#footer {
+    background-color: #000;
 }
