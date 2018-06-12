@@ -5,11 +5,22 @@ body {
 
 /* ---> Fonts & Font Sizing <---------------------- */
 
-h1 {}
+h1 {
+    font-size: 72px;
+    color: #fff;
+}
 
-h2 {}
+h2 {
+    font-size: 36px;
+}
 
-h3 {}
+h3 {
+    color: rgb(227, 227, 227);
+}
+
+p {
+    font-size: 18px;
+}
 
 
 /* ---> Container Spacing <------------------------ */
@@ -48,6 +59,8 @@ h3 {}
 
 .nav-link {
     color: #fff;
+    text-transform: uppercase;
+    margin: 0 10px 0 10px;
 }
 
 
