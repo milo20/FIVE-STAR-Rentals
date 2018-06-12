@@ -62,11 +62,19 @@ h3 {}
 /* ---> Page Sections <------------------------------- */
 
 #header-hero {
-    background-color: darkblue;
+    /* The image used */
+    background-image: url("skyline-3.jpg");
+    /* Set a specific height */
+    height: 250%;
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #how-it-works {
-    background-color: blueviolet;
+    background-color: #fff;
 }
 
 #services {
