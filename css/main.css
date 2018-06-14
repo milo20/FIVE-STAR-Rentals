@@ -1,6 +1,4 @@
-body {
-    background-color #fff;
-}
+body {}
 
 
 /* ---> Fonts & Font Sizing <---------------------- */
@@ -40,6 +38,10 @@ p {
 
 .service-img {
     height: 125px;
+}
+
+.companies-img {
+    height: 155px;
 }
 
 
@@ -100,14 +102,34 @@ p {
 }
 
 
+/* ---> Companies <------------------------------- */
+
+.companies {
+    background-color: #047490;
+}
+
+.companies .container {
+    padding: 40px 0;
+}
+
+
 /* ---> How it works <------------------------------- */
 
 #how-it-works {
     background-color: #fff;
 }
 
+.how-it-works h1 {
+    color: #047490;
+    text-transform: uppercase;
+}
 
-/* ---> Service <------------------------------- */
+.how-it-works span {
+    font-size: 42px;
+}
+
+
+/* ---> Services <------------------------------- */
 
 #services {
     background-color: #eee;

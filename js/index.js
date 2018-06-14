@@ -23,7 +23,7 @@ qb.App = (function() {
         // Transition effect for navbar
         $(window).scroll(function() {
             // checks if window is scrolled more than x, adds/removes solid class\
-            if ($(this).scrollTop() > $(".header-hero").height() - ($(".navbar").height() * 2)) {
+            if ($(this).scrollTop() > $(".header-hero").height() / 2 - ($(".navbar").height() * 2)) {
                 // scrolls to end of header div
                 $(".navbar").addClass('solid');
                 // should also swap logo image to light version
