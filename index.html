@@ -14,6 +14,7 @@
     <link href='css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
     <link href='css/mobile.css' rel='stylesheet'>
+    <link href='css/apply.css' rel='stylesheet'>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans|Roboto:100|Lato:100" rel="stylesheet">
@@ -26,7 +27,7 @@
     <nav id="navbar" class="navbar navbar-expand-md fixed-top px-5">
 
         <a href="#" class="navbar-brand">
-            <img src="img/star.png" class="" alt="">
+            <img src="img/logo-white.png" class="" alt="">
         </a>
 
         <ul class="navbar-nav d-none d-md-flex ml-auto justify-content-end">
@@ -51,9 +52,9 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link cta-button btn btn-fill btn-large" href="/apply">
+                <button class="nav-link cta-button btn btn-fill btn-large btn-apply">
                     Apply Now
-                </a>
+                </button>
             </li>
         </ul>
     </nav>
@@ -61,10 +62,12 @@
 
     <!--- Header -->
     <section id="header-hero" class="header-hero">
-        <div class="container text-center">
+        <div class="container">
             <div class="hero-text">
-                <h1 class=" my-4">Join the next generation of drivers.</h1>
-                <a class="cta-button btn btn-large btn-fill" href="/apply">Apply Now</a>
+                <h1 class=" my-4">Join the next generation <br>of drivers.</h1>
+                <button class="nav-link cta-button btn btn-fill btn-large btn-apply">
+                        Apply Now
+                    </button>
             </div>
         </div>
     </section>
@@ -74,10 +77,10 @@
     <section id="how-it-works" class="how-it-works">
         <div class="container text-center">
             <h2>How It Works</h2>
-            <ul class="list-unstyled my-5">
+            <ul class="list-unstyled mt-5">
                 <li class="my-4">
                     <h1>1 <span>Apply</span></h1>
-                    <p>Apply <a href="/apply">here</a> by filling out our application.</p>
+                    <p>Apply <a class="btn-apply" href="javascript:void(0);">here</a> by filling out our application.</p>
                 </li>
                 <li class="my-4">
                     <h1>2 <span>Interview</span></h1>
@@ -86,7 +89,7 @@
                 </li>
                 <li class="my-4">
                     <h1>3 <span>Orientation</span></h1>
-                    <p>Come in for orientation and sign the lease. You will have the option to lease to own.</p>
+                    <p>Come in for orientation and sign the lease. Leasing to own is an available option.</p>
 
                 </li>
             </ul>
@@ -154,11 +157,6 @@
 
 
 
-    <!--- Apply -->
-    <section id="apply " class="apply d-none ">
-        <div class="container text-center"></div>
-    </section>
-
 
 
     <!--- Contact -->
@@ -185,8 +183,8 @@
                     </a>
                 </div>
                 <div class="col-2 ">
-                    <a href="# ">
-                        <span>text 2</span>
+                    <a class="btn-apply" href="javascript:void(0);">
+                        <span>Apply</span>
                     </a>
                 </div>
                 <div class="col-2 ">
@@ -224,6 +222,28 @@
             </div>
         </div>
     </section>
+
+
+    <!--- Apply Modal -->
+    <section id="apply" class="apply">
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close text-right">&times;</span>
+                <h1 class="text-center">Apply</h1>
+                <p>Please enter your information so we can review your submission.
+                </p>
+                need to fix submit button and add form
+                <button class="cta-button btn btn-fill btn-large btn-submit">
+                       Submit
+                    </button>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- The Modal -->
 
 
 
