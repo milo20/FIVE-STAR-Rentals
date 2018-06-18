@@ -11,7 +11,7 @@
         /* ---> Other <-------------------------- */
         /* ---> Header <------------------------------- */
         #header-hero {
-            background-size: 10%;
+            background-size: auto;
         }
         .hero-text {
             padding: 28% 0;
