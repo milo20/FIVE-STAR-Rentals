@@ -3,11 +3,17 @@
     @media(max-width:768px) {
         /* ---> Font Size <----------------------------- */
         h1 {
-            font-size: 52px;
+            font-size: 62px;
             font-weight: 400;
         }
         /* ---> Container & Image Sizing <---------------- */
         /* ---> Navbar <---------------------------------- */
         /* ---> Other <-------------------------- */
-        /* ---> Page Sections <-------------------------- */
+        /* ---> Header <------------------------------- */
+        #header-hero {
+            background-size: contain;
+        }
+        .hero-text {
+            padding: 28% 0;
+        }
     }
