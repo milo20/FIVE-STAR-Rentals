@@ -44,6 +44,7 @@ p {
 
 .companies-img {
     height: 155px;
+    opacity: 0.85;
 }
 
 
@@ -100,7 +101,7 @@ p {
 }
 
 .hero-text {
-    padding: 35% 0;
+    padding: 38% 0;
 }
 
 
@@ -118,11 +119,11 @@ p {
 /* ---> How it works <------------------------------- */
 
 #how-it-works {
-    background-color: #fff;
+    background-color: #eee;
 }
 
 .how-it-works h1 {
-    color: #047490;
+    color: #e6ac00;
     text-transform: uppercase;
 }
 
@@ -134,7 +135,7 @@ p {
 /* ---> Services <------------------------------- */
 
 #services {
-    background-color: #eee;
+    background-color: #fff;
 }
 
 .services h4 {
