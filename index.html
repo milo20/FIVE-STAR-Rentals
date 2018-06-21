@@ -232,29 +232,85 @@
                 </p>
 
                 <form>
-                    <input required type="text" name="firstname" placeholder="First Name *">
-                    <input required type="text" name="lastname" placeholder="Last Name *">
-                    <br>
-                    <input required type="text" name="email" placeholder="Email *">
-                    <input required type="text" name="age" placeholder="Age *">
-                    <br>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="firstname">First Name</label>
+                            <input required type="text" class="form-control" id="firstname">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="lastname">Last Name</label>
+                            <input required type="text" class="form-control" id="lastname">
+                        </div>
 
-                    <br> Lease preference:
-                    <br>
-                    <input type="radio " name="lease " value="lease " checked> Lease<br>
-                    <input type="radio " name="lease " value="leasetoown "> Lease to Own<br>
-                    <input required type="text " name="driverslicensenum " placeholder="Driver 's License # *">
-                    <input required type="text" name="driverslicensestate" placeholder="Driver's License State * ">
-                    <br>
-                    <input required type="text " name="drivingrecord " placeholder="Describe your driving record * ">
-                    <br>
-                    <input required type="text" name="jobtitle" placeholder="Current or previous job title *">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="age">Email</label>
+                            <input required type="email" class="form-control" id="email">
+                        </div>
 
+                        <div class="form-group col-md-6">
+                            <label for="jobtitle">Current Job Title</label>
+                            <input required type="text" class="form-control" id="jobtitle">
+                        </div>
+
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="age">Age</label>
+                            <select required id="age" class="form-control">
+                                                  <option selected>Choose...</option>
+                                                  <option>18-24</option>
+                                                  <option>25-65</option>
+                                                  <option>65+</option>
+                                                </select>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="licensenumber">License #</label>
+                            <input required type="text" class="form-control" id="licensenumber">
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="licensestate">License State</label>
+                            <select required id="licensestate" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>state</option>
+                              </select>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="drivingrecord">Describe Your Driving Record</label>
+                            <input required type="text" class="form-control" id="drivingrecord">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="drivingrecord">Lease Type:</label>
+                            <div class="form-check">
+                                <input required class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                                <label class="form-check-label" for="exampleRadios1">
+                              Lease
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input required class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                                <label class="form-check-label" for="exampleRadios2">
+                              Rent To Own
+                            </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-right">
+                        <button class="cta-button btn btn-fill btn-large btn-submit " type="submit">
+                            Submit
+                         </button>
+                    </div>
                 </form>
 
-                <button class="cta-button btn btn-fill btn-large btn-submit ">
-                       Submit
-                    </button>
             </div>
         </div>
     </section>

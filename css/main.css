@@ -181,4 +181,9 @@ p {
 
 .apply h1 {
     color: #000;
+    font-size: 56px;
+}
+
+.apply label {
+    color: #666666;
 }
