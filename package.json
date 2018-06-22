@@ -8,7 +8,6 @@
         "start": "npm run build-css && npm run open",
         "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/\"",
         "build-css": "node-sass --include-path scss css/form.scss css/output.css"
-
     },
     "repository": {
         "type": "git",
