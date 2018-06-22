@@ -1,5 +1,7 @@
 var qb = {};
 
+
+
 qb.App = (function() {
 
     function initApp() {
@@ -54,7 +56,6 @@ qb.App = (function() {
         }
 
         submit.onclick = function() {
-            console.log("do stiiiii");
             submit.style.display = "none";
             apply.style.display = "none";
             thanks.style.display = "block";
@@ -75,6 +76,8 @@ qb.App = (function() {
         }
     }
 
+
+
     /* ------------------------------------------------- */
     return {
         init: function() {
@@ -87,3 +90,7 @@ qb.App = (function() {
 $(document).ready(function($) {
     new qb.App.init();
 });
+
+function test() {
+    console.log("HIHIHIH");
+}

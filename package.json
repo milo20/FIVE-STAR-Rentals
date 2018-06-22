@@ -1,19 +1,26 @@
 {
-  "name": "five-star-rentals",
-  "version": "1.0.0",
-  "description": "five-star-rentals",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qianabarton/FIVE-STAR-Rentals.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/qianabarton/FIVE-STAR-Rentals/issues"
-  },
-  "homepage": "https://github.com/qianabarton/FIVE-STAR-Rentals#readme"
+    "name": "five-star-rentals",
+    "version": "1.0.0",
+    "description": "five-star-rentals",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "npm run open",
+        "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://localhost:1234/\""
+    },
+
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/qianabarton/FIVE-STAR-Rentals.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/qianabarton/FIVE-STAR-Rentals/issues"
+    },
+    "homepage": "https://github.com/qianabarton/FIVE-STAR-Rentals#readme",
+    "devDependencies": {
+        "concurrently": "^3.6.0",
+        "http-server": "^0.11.1"
+    }
 }

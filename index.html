@@ -106,7 +106,7 @@
             <ul class="list-unstyled mt-5 text-left">
                 <li class=" my-4">
                     <h1>1 <span>Apply</span></h1>
-                    <p>Apply <a class="btn-apply " href="javascript:void(0); ">here</a> by filling out our application.</p>
+                    <p>Apply <a class="btn-apply" href="javascript:void(0);">here</a> by filling out an application.</p>
                 </li>
                 <li class="my-4">
                     <h1>2 <span>Interview</span></h1>
@@ -163,6 +163,12 @@
                     <a class="mt-3 cta-button btn btn-large btn-ghost " href="mailto:example@gmail.com ">Contact Us</a>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <section id="form" class="form ">
+        <div class="container text-center ">
+            <?php include 'form.php';?>
         </div>
     </section>
 
@@ -223,39 +229,38 @@
             <div class="modal-content">
                 <button type="button" class="close close-modal text-right " data-dismiss="modal ">&times;</button>
 
-                <form id="apply-form">
-                    <h1 class="text-center ">Apply</h1>
+                <form name="application" id="apply-form" method="POST" action="https://formspree.io/barton.qiana@gmail.com">
+                    <h1 class=" text-center">Apply</h1>
                     <p>Please enter your information so we can review your submission.
                     </p>
 
-                    <div class="form-row">
+                    <div class="form-row ">
+                        <div class="form-group col-md-6 ">
+                            <label for="firstname">First Name</label>
+                            <input required type="text" class="form-control " name="First Name" value="Qiana">
+                        </div>
+                        <div class="form-group col-md-6 ">
+                            <label for="lastname">Last Name</label>
+                            <input required type="text" class="form-control " name="Last Name" value="b">
+                        </div>
+
+                    </div>
+                    <div class="form-row ">
                         <div class="form-group col-md-6">
-                            <label for="firstname ">First Name</label>
-                            <input required type="text" class="form-control" id="firstname">
+                            <label for="Phone">Phone</label>
+                            <input required type="tel" class="form-control " name="Phone" value="292929">
                         </div>
                         <div class="form-group col-md-6 ">
-                            <label for="lastname ">Last Name</label>
-                            <input required type="text" class="form-control" id="lastname">
-                        </div>
-
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-6 ">
-                            <label for="age ">Email</label>
-                            <input required type="email" class="form-control" id="email">
-                        </div>
-
-                        <div class="form-group col-md-6 ">
-                            <label for="jobtitle ">Current Job Title</label>
-                            <input required type="text" class="form-control" id="jobtitle">
+                            <label for="age">Email</label>
+                            <input required type="email" class="form-control " name="Email" value="q@g.com">
                         </div>
 
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group col-md-4">
-                            <label for="age">Age</label>
-                            <select required id="age" class="form-control">
+                    <div class="form-row ">
+                        <div class="form-group col-md-4 ">
+                            <label for="age ">Age</label>
+                            <select required name="Age" class="form-control ">
                                                       <option selected>Choose...</option>
                                                       <option>18-24</option>
                                                       <option>25-65</option>
@@ -263,12 +268,12 @@
                                                     </select>
                         </div>
                         <div class="form-group col-md-4 ">
-                            <label for="licensenumber ">License #</label>
-                            <input required type="text" class="form-control " id="licensenumber">
+                            <label for="licensenumber">License #</label>
+                            <input required type="text " class="form-control " name="License Number" value="292929">
                         </div>
                         <div class="form-group col-md-4 ">
-                            <label for="licensestate">License State</label>
-                            <select required id="licensestate" class="form-control">
+                            <label for="licensestate ">License State</label>
+                            <select required name="License State " class="form-control">
                                     <option selected>Choose...</option>
                                     <option>state</option>
                                   </select>
@@ -276,49 +281,47 @@
                     </div>
 
                     <div class="form-row ">
-                        <div class="form-group col-md-12 ">
-                            <label for="drivingrecord ">Describe Your Driving Record</label>
-                            <input required type="text " class="form-control" id="drivingrecord">
+                        <div class="form-group col-md-6 ">
+                            <label for="jobtitle ">Current Job Title</label>
+                            <input required type="text" class="form-control " name="Job Title " value="qianatron">
                         </div>
+                        <div class="form-group col-md-6">
+                            <label for="drivingrecord">Describe Your Driving Record</label>
+                            <input required type="text" class="form-control " name="Driving Record" value="GREAT">
+                        </div>
+
+
                     </div>
 
-                    <div class="form-row">
-                        <div class="form-group">
+                    <div class="form-row ">
+                        <div class="form-group ">
                             <label for="drivingrecord ">Lease Type:</label>
-                            <div class="form-check">
-                                <input required class="form-check-input " type="radio" name="exampleRadios" id="exampleRadios1" value="option1 " checked>
-                                <label class="form-check-label" for="exampleRadios1">
+                            <div class="form-check ">
+                                <input required class="form-check-input" type="radio" name="Lease Type" value="Lease" checked>
+                                <label class="form-check-label" for="Lease Type">
                                   Lease
                                 </label>
                             </div>
-                            <div class="form-check">
-                                <input required class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2 ">
-                                <label class="form-check-label" for="exampleRadios2">
-                                  Rent To Own
+                            <div class="form-check ">
+                                <input required class="form-check-input " type="radio" name="Lease Type" value="Rent to Own">
+                                <label class="form-check-label" for="Lease Type">
+                                  Rent to Own
                                 </label>
                             </div>
                         </div>
                     </div>
-                </form>
-
-                <div class="text-right">
-                    <button id="submit" class="cta-button btn btn-fill btn-large">
+                    <div class="text-right">
+                        <button type="submit" class="cta-button btn btn-fill btn-large">
                             Submit
                         </button>
-                </div>
-
-                <div id="thanks" class="text-center">
-                    <h1>Thanks!</h1>
-                    <p>A member of our team will be in touch with you shortly.
-                    </p>
-                    <button class="close-modal cta-button btn btn-fill btn-large ">
-                                        Got It
-                        </button>
-                </div>
+                    </div>
+                </form>
             </div>
-
         </div>
     </section>
+
+
+
 
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src="js/bootstrap.min.js "></script>
