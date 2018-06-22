@@ -96,3 +96,163 @@ body {
 .contact-wrap {
     padding: 15px;
 }
+
+///////////////////////////////////////// button
+$menucolor:#fff;
+.mobile-btn {
+    position: relative;
+    text-decoration: none;
+    height: 30px;
+    width: 30px;
+    display: block;
+    margin: 0 auto;
+    span {
+        position: absolute;
+        height: 3px;
+        width: 30px;
+        right: 0;
+        top: 50%;
+        margin-top: -1px;
+        background: $menucolor;
+        border-radius: 2px;
+        transition: background 0.3s;
+        &:before {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 30px;
+            top: -10px;
+            display: block;
+            background: $menucolor;
+            border-radius: 2px;
+            transition: transform 0.3s, top 0.3s 0.3s;
+        }
+        &:after {
+            position: absolute;
+            content: "";
+            height: 3px;
+            width: 30px;
+            top: 10px;
+            display: block;
+            background: $menucolor;
+            border-radius: 2px;
+            transition: transform 0.3s, top 0.3s 0.3s;
+        }
+    }
+    &.cross {
+        span {
+            background: transparent;
+            &:before {
+                top: 0;
+                transform: rotate(45deg);
+                transition: top 0.3s, transform 0.3s 0.3s;
+            }
+            &:after {
+                top: 0;
+                transform: rotate(-45deg);
+                transition: top 0.3s, transform 0.3s 0.3s;
+            }
+        }
+    }
+}
+
+///////////////////////////////////////// nav
+//Colours
+$black: #0e0e0e;
+$orange: #fcb852;
+$grey: #dedede;
+$white: #fff;
+//Fonts
+$heading: 'PT Sans',
+sans-serif;
+$maintext: 'Open Sans',
+sans-serif;
+// General Pen Styles
+.text {
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+
+// FLASHY SLIPPY NAV STYLES
+.mobile-nav-button {
+    width: 35px;
+    // position: absolute;
+    margin: 15px;
+    // right: 0;
+    // top: 0;
+    z-index: 9999;
+    cursor: pointer;
+    width: 35px;
+    height: 30px;
+}
+
+//Mobile Menu
+.mobile-menu {
+    display: block;
+    max-width: 500px;
+    width: 100%;
+    right: -100%;
+    height: 100vh;
+    background: $orange;
+    position: absolute;
+    z-index: 9998;
+    transition: 0.6s ease;
+    top: 0;
+    opacity: 0;
+    ul {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                width: 100%;
+                max-width: 1200px;
+                margin: 0 auto;
+                display: block;
+                text-align: center;
+                text-decoration: none;
+                color: $black;
+                font-size: 3rem;
+                font-weight: bold;
+                overflow: hidden;
+                position: relative;
+                &:after {
+                    content: '';
+                    background: $black;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    right: -100%;
+                    top: 0;
+                    z-index: -1;
+                    transition: 0.4s ease;
+                }
+                &:hover {
+                    &:after {
+                        right: 0;
+                    }
+                    color:$white;
+                }
+            }
+        }
+    }
+    img {
+        position: absolute;
+        width: 150px;
+        display: block;
+        left: 50%;
+        top: 3rem;
+        transform: translatex(-50%);
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.mobile-menu--open {
+    right: 0;
+    opacity: 1;
+}

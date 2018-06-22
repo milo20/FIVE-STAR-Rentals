@@ -11,7 +11,7 @@ qb.App = (function() {
         $(window).resize(); //on page load
         //modal();
         form();
-        // mobileNav();
+        mobileNav();
     }
 
     function sizing() {
