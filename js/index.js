@@ -3,14 +3,11 @@ var qb = {};
 qb.App = (function() {
 
     function initApp() {
-
-        /*
         transparentNav();
         sizing();
 
         $(window).resize(); //on page load
         modal();
-        */
     }
 
     function sizing() {
