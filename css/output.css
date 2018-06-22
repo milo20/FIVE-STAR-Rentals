@@ -54,11 +54,6 @@
     .contact-form .square-button:hover, .contact-form .square-button:focus {
       background-color: white; }
 
-@media (min-width: 768px) {
-  .contact-wrap {
-    width: 60%;
-    margin: auto; } }
-
 /*----page styles---*/
 .contact-wrap {
   padding: 15px; }
@@ -144,7 +139,7 @@
     padding: 0; }
     .mobile-menu ul li {
       list-style: none; }
-      .mobile-menu ul li a {
+      .mobile-menu ul li .nav-link {
         width: 100%;
         max-width: 1200px;
         margin: 0 auto;
@@ -152,11 +147,11 @@
         text-align: center;
         text-decoration: none;
         color: #0e0e0e;
-        font-size: 3rem;
+        font-size: 48px;
         font-weight: bold;
         overflow: hidden;
         position: relative; }
-        .mobile-menu ul li a:after {
+        .mobile-menu ul li .nav-link:after {
           content: '';
           background: #0e0e0e;
           width: 100%;
@@ -166,9 +161,9 @@
           top: 0;
           z-index: -1;
           transition: 0.4s ease; }
-        .mobile-menu ul li a:hover {
+        .mobile-menu ul li .nav-link:hover {
           color: #fff; }
-          .mobile-menu ul li a:hover:after {
+          .mobile-menu ul li .nav-link:hover:after {
             right: 0; }
   .mobile-menu img {
     position: absolute;
@@ -183,3 +178,8 @@
 .mobile-menu--open {
   right: 0;
   opacity: 1; }
+
+@media (min-width: 768px) {
+  .contact-wrap {
+    width: 60%;
+    margin: auto; } }

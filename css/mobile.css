@@ -3,7 +3,7 @@
     @media(max-width:768px) {
         /* ---> Font Size <----------------------------- */
         h1 {
-            font-size: 62px;
+            font-size: 52px;
             font-weight: 400;
         }
         /* ---> Container & Image Sizing <---------------- */
@@ -24,5 +24,8 @@
             padding: 10px;
             border: 1px solid #888;
             width: 95%;
+        }
+        .nav-link {
+            font-size: 32px !important;
         }
     }

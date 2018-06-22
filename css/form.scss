@@ -76,14 +76,6 @@ $form-bg: #047490;
     }
 }
 
-//tablet and above devices
-@media (min-width: 768px) {
-    .contact-wrap {
-        width: 60%;
-        margin: auto;
-    }
-}
-
 //////////////////////////
 
 /*----page styles---*/
@@ -208,7 +200,7 @@ sans-serif;
         padding: 0;
         li {
             list-style: none;
-            a {
+            .nav-link {
                 width: 100%;
                 max-width: 1200px;
                 margin: 0 auto;
@@ -216,7 +208,7 @@ sans-serif;
                 text-align: center;
                 text-decoration: none;
                 color: $black;
-                font-size: 3rem;
+                font-size: 48px;
                 font-weight: bold;
                 overflow: hidden;
                 position: relative;
@@ -255,4 +247,12 @@ sans-serif;
 .mobile-menu--open {
     right: 0;
     opacity: 1;
+}
+
+//tablet and above devices
+@media (min-width: 768px) {
+    .contact-wrap {
+        width: 60%;
+        margin: auto;
+    }
 }
