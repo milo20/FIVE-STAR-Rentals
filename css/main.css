@@ -172,7 +172,8 @@ p {
 /* ---> Companies <------------------------------- */
 
 .companies {
-    background-color: #999999;
+    /*background-color: #047490;*/
+    background-color: #8c8c8c;
 }
 
 .companies .container {
@@ -196,19 +197,16 @@ p {
 }
 
 #form {
-    background: linear-gradient(to right, #047490, #049490);
-    /*background-color: #047490;*/
+    /* background: linear-gradient(to right, #047490, #049490); */
+    background-color: #047490;
 }
 
-.apply-text {
-    background-color: #fff;
-    padding: 100px 0 10px 0;
-}
+.apply-text {}
 
 .apply-text h2 {
-    color: #037996;
+    color: #c2e9ef;
 }
 
 .apply-text p {
-    color: #048daf;
+    color: #9adae4;
 }

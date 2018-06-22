@@ -24,14 +24,13 @@
 
 <body>
 
-    <!--- Nav Bar -->
+    <!--- Nav Bar  d-md-flex -->
     <nav id="navbar" class="navbar navbar-expand-md fixed-top px-5">
-
         <a href="#" class="navbar-brand">
             <img src="img/logo-white.png" class="" alt="">
         </a>
 
-        <ul class="navbar-nav d-none d-md-flex ml-auto justify-content-end">
+        <ul class="navbar-nav  d-none d-md-flex ml-auto justify-content-end">
             <li class="nav-item">
                 <a class="nav-link" href="#how-it-works">
                     How It Works
@@ -59,6 +58,8 @@
             </li>
         </ul>
     </nav>
+
+
 
 
     <!--- Header -->
@@ -156,108 +157,110 @@
 
     <!--- Form -->
     <section id="form" class="form ">
-        <div class="apply-text text-center">
-            <h2>Apply</h2>
-            <p>Please enter your information so we can review your submission.
-            </p>
-        </div>
-        <div class="contact-wrap">
-            <form class="contact-form" method="POST" action="https://formspree.io/barton.qiana@gmail.com">
+        <div class="container">
+            <div class="apply-text text-center">
+                <h2>Apply</h2>
+                <p>Please enter your information so we can review your submission.
+                </p>
+            </div>
+            <div class="contact-wrap">
+                <form class="contact-form" method="POST" action="https://formspree.io/barton.qiana@gmail.com">
 
-                <div class="form-row">
-                    <div class=" col-md-6">
-                        <div class="input-block">
-                            <label>First Name</label>
-                            <input required type="text" class="form-control " name="First Name">
+                    <div class="form-row">
+                        <div class=" col-md-6">
+                            <div class="input-block">
+                                <label>First Name</label>
+                                <input required type="text" class="form-control " name="First Name">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Last Name</label>
+                                <input required type="text" class="form-control " name="Last Name">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Last Name</label>
-                            <input required type="text" class="form-control " name="Last Name">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Phone</label>
-                            <input required type="tel" class="form-control " name="Phone">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Phone</label>
+                                <input required type="tel" class="form-control " name="Phone">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Email</label>
+                                <input required type="email" class="form-control " name="Email">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Email</label>
-                            <input required type="email" class="form-control " name="Email">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Age</label>
-                            <select required name="Age" class="form-control ">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Age</label>
+                                <select required name="Age" class="form-control ">
                                     <option selected>Select...</option>
                                     <option>18-24</option>
                                     <option>25-65</option>
                                     <option>65+</option>
                                 </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Lease Type</label>
-                            <select required name="Lease Type" class="form-control">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Lease Type</label>
+                                <select required name="Lease Type" class="form-control">
                                 <option selected>Select...</option>
                                 <option>Lease</option>
                                 <option>Rent To Own</option>
                             </select>
+                            </div>
                         </div>
+
                     </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>License #</label>
+                                <input required type="text " class="form-control " name="License Number">
 
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>License #</label>
-                            <input required type="text " class="form-control " name="License Number">
-
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>License State</label>
-                            <select required name="License State " class="form-control">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>License State</label>
+                                <select required name="License State " class="form-control">
                                     <option selected>Select...</option>
                                     <option>state</option>
                             </select>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Current Job Title</label>
-                            <input required type="text" class="form-control " name="Job Title">
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Current Job Title</label>
+                                <input required type="text" class="form-control " name="Job Title">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="input-block">
+                                <label>Describe Your Driving Record</label>
+                                <input required type="text" class="form-control " name="Driving Record">
+                            </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="input-block">
-                            <label>Describe Your Driving Record</label>
-                            <input required type="text" class="form-control " name="Driving Record">
-                        </div>
-                    </div>
-                </div>
 
-                <div class="form-row">
-                    <div class="col-md-12">
-                        <button class="cta-button btn btn-fill btn-large square-button">
+                    <div class="form-row">
+                        <div class="col-md-12">
+                            <button class="cta-button btn btn-fill btn-large square-button">
                         Submit</button>
+                        </div>
                     </div>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
     </section>
 

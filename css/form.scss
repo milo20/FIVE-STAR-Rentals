@@ -1,14 +1,14 @@
 //colors
-$primary-color: #047490;
-$secondary-color: #333;
-$form-bg: #fff;
+$primary-color: #2fa4b6;
+$secondary-color: #85d4e0;
+$form-bg: #047490;
 //contact form
 .contact-form {
     margin-top: 30px;
-    margin-bottom: 100px;
+    // margin-bottom: 100px;
     .input-block {
-        background-color: rgba(white, .7);
-        border: solid 1px $primary-color;
+        // background-color: rgba(#f2f2f2, .7);
+        border-bottom: solid 2px $primary-color;
         width: 100%;
         height: 60px;
         padding: 25px;
@@ -17,7 +17,7 @@ $form-bg: #fff;
         transition: all 0.3s ease-out;
         &.focus {
             background-color: $form-bg;
-            border: solid 1px darken($primary-color, 10%);
+            border-bottom: solid 1px darken($primary-color, 2%);
         }
         &.textarea {
             height: auto;
