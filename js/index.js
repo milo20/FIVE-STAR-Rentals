@@ -2,14 +2,15 @@ var qb = {};
 
 qb.App = (function() {
 
-    var $mobileNav;
-
     function initApp() {
+
+        /*
         transparentNav();
         sizing();
 
         $(window).resize(); //on page load
-        apply();
+        modal();
+        */
     }
 
     function sizing() {
@@ -34,15 +35,19 @@ qb.App = (function() {
     }
 
 
-    function apply() {
+    function modal() {
+
         // Get the modal
-        var modal = document.getElementById('myModal');
+        var modal = document.getElementById('applyModal');
+        var apply = document.getElementById('apply-form');
+        var thanks = document.getElementById('thanks');
 
         // Get the button that opens the modal
-        var btn = document.getElementsByClassName("btn-apply");
+        var btn = document.getElementsByClassName('btn-apply');
+        var submit = document.getElementById('submit');
 
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName('close-modal');
 
         // When the user clicks on the button, open the modal 
         for (i = 0; i < btn.length; i++) {
@@ -51,30 +56,29 @@ qb.App = (function() {
             }
         }
 
-        // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
+        submit.onclick = function() {
+            console.log("do stiiiii");
+            submit.style.display = "none";
+            apply.style.display = "none";
+            thanks.style.display = "block";
+        }
 
+        // When the user clicks on <span> (x), close the modal
+        for (i = 0; i < span.length; i++) {
+            span[i].onclick = function() {
+                modal.style.display = "none";
+            }
         }
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
-
             }
         }
-
     }
 
-
-
-
-
-
-
     /* ------------------------------------------------- */
-
     return {
         init: function() {
             initApp();
@@ -82,7 +86,6 @@ qb.App = (function() {
     }
 
 })();
-
 
 $(document).ready(function($) {
     new qb.App.init();

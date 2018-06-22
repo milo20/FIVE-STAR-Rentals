@@ -132,6 +132,13 @@ p {
 }
 
 
+/* ---> Mission <------------------------------- */
+
+#mission {
+    background-color: red;
+}
+
+
 /* ---> Services <------------------------------- */
 
 #services {
@@ -140,13 +147,6 @@ p {
 
 .services h4 {
     color: #047490;
-}
-
-
-/* ---> Mission <------------------------------- */
-
-#mission {
-    background-color: #fff;
 }
 
 
