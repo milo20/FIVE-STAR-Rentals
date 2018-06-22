@@ -9,7 +9,6 @@ qb.App = (function() {
         sizing();
 
         $(window).resize(); //on page load
-        //modal();
         form();
         mobileNav();
     }
@@ -30,7 +29,6 @@ qb.App = (function() {
                 // should also swap logo image to light version
             } else {
                 $(".navbar").removeClass('solid');
-
             }
         });
     }
@@ -72,6 +70,7 @@ qb.App = (function() {
         $('.mobile-nav-button').on('click', function() {
             // Toggles a class that slides the menu into view on the screen
             $('.mobile-menu').toggleClass('mobile-menu--open');
+            console.log("open");
             return false;
         });
 
@@ -82,11 +81,16 @@ qb.App = (function() {
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-            if (event.target != $('.mobile-menu')) {
-                $('.mobile-menu').toggleClass('mobile-menu--open');
-                $('.mobile-btn').toggleClass('cross');
-                return false;
+
+            if ($('.mobile-menu').hasClass('mobile-menu--open')) {
+                if (event.target != $('.mobile-menu')) {
+                    console.log("toggle");
+                    $('.mobile-menu').toggleClass('mobile-menu--open');
+                    $('.mobile-btn').toggleClass('cross');
+                    return false;
+                }
             }
+
         }
     }
 
