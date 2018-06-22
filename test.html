@@ -1,0 +1,124 @@
+<h1> Responsive Material Design Form
+    <small>Material Design delivers a cleaner and flatter user interface</small>
+</h1>
+<section class="contact-wrap">
+    <form action="" class="contact-form">
+        <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">First Name</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="input-block">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Email</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="input-block">
+                <label for="">Message Subject</label>
+                <input type="text" class="form-control">
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <div class="input-block textarea">
+                <label for="">Drop your message here</label>
+                <textarea rows="3" type="text" class="form-control"></textarea>
+            </div>
+        </div>
+        <div class="col-sm-12">
+            <button class="square-button">Send</button>
+        </div>
+    </form>
+</section>
+
+
+
+
+
+
+<form class="contact-form" method="POST" action="https://formspree.io/barton.qiana@gmail.com">
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>First Name</label>
+            <input required type="text" class="form-control " name="First Name" value="Qiana">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Last Name</label>
+            <input required type="text" class="form-control " name="Last Name" value="b">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Phone</label>
+            <input required type="tel" class="form-control " name="Phone" value="292929">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Email</label>
+            <input required type="email" class="form-control " name="Email" value="q@g.com">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <label>Age</label>
+            <select required name="Age" class="form-control ">
+                <option selected>Choose...</option>
+                <option>18-24</option>
+                <option>25-65</option>
+                <option>65+</option>
+            </select>
+        </div>
+        <div class="form-group col-md-6">
+            <label>Lease Type</label>
+            <select required name="Lease Type" class="form-control">
+                <option selected>Lease</option>
+                <option>Rent To Own</option>
+            </select>
+        </div>
+
+    </div>
+
+    <div class="form-row ">
+        <div class="form-group col-md-6">
+            <label>License #</label>
+            <input required type="text " class="form-control " name="License Number" value="292929">
+        </div>
+        <div class="form-group col-md-6">
+            <label>License State</label>
+            <select required name="License State " class="form-control">
+                <option selected>Choose...</option>
+                <option>state</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-row ">
+        <div class="form-group col-md-12 ">
+            <label>Current Job Title</label>
+            <input required type="text" class="form-control " name="Job Title " value="qianatron">
+        </div>
+    </div>
+
+    <div class="form-row ">
+        <div class="form-group col-md-12">
+            <label>Describe Your Driving Record</label>
+            <input required type="text" class="form-control " name="Driving Record" value="GREAT">
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button type="submit" class="cta-button btn btn-fill btn-large">
+            Submit
+        </button>
+    </div>
+</form>

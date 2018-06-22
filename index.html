@@ -13,7 +13,7 @@
     <!-- CSS -->
     <link href='css/bootstrap.min.css' rel='stylesheet'>
     <link href='css/main.css' rel='stylesheet'>
-    <link href='css/apply.css' rel='stylesheet'>
+    <link href='css/output.css' rel='stylesheet'>
 
     <link href='css/mobile.css' rel='stylesheet'>
 
@@ -53,7 +53,7 @@
                 </a>
             </li>
             <li class="nav-item">
-                <button class="nav-link cta-button btn btn-fill btn-large btn-apply">
+                <button class="nav-link cta-button btn btn-fill btn-large btn-apply" onclick="location.href='#form';">
                     Apply Now
                 </button>
             </li>
@@ -66,7 +66,7 @@
         <div class="container text-center">
             <div class="hero-text">
                 <h1 class=" my-4">Join the next generation of drivers.</h1>
-                <button class="d-inline nav-link cta-button btn btn-fill btn-large btn-apply">
+                <button class="d-inline nav-link cta-button btn btn-fill btn-large btn-apply" onclick="location.href='#form';">
                         Apply Now
                 </button>
             </div>
@@ -106,7 +106,7 @@
             <ul class="list-unstyled mt-5 text-left">
                 <li class=" my-4">
                     <h1>1 <span>Apply</span></h1>
-                    <p>Apply <a class="btn-apply" href="javascript:void(0);">here</a> by filling out an application.</p>
+                    <p>Apply <a class="btn-apply" href="#form">here</a> by filling out an application.</p>
                 </li>
                 <li class="my-4">
                     <h1>2 <span>Interview</span></h1>
@@ -152,6 +152,115 @@
         </div>
     </section>
 
+
+
+    <!--- Form -->
+    <section id="form" class="form ">
+        <div class="apply-text text-center">
+            <h2>Apply</h2>
+            <p>Please enter your information so we can review your submission.
+            </p>
+        </div>
+        <div class="contact-wrap">
+            <form class="contact-form" method="POST" action="https://formspree.io/barton.qiana@gmail.com">
+
+                <div class="form-row">
+                    <div class=" col-md-6">
+                        <div class="input-block">
+                            <label>First Name</label>
+                            <input required type="text" class="form-control " name="First Name">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Last Name</label>
+                            <input required type="text" class="form-control " name="Last Name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Phone</label>
+                            <input required type="tel" class="form-control " name="Phone">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Email</label>
+                            <input required type="email" class="form-control " name="Email">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Age</label>
+                            <select required name="Age" class="form-control ">
+                                    <option selected>Select...</option>
+                                    <option>18-24</option>
+                                    <option>25-65</option>
+                                    <option>65+</option>
+                                </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Lease Type</label>
+                            <select required name="Lease Type" class="form-control">
+                                <option selected>Select...</option>
+                                <option>Lease</option>
+                                <option>Rent To Own</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>License #</label>
+                            <input required type="text " class="form-control " name="License Number">
+
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>License State</label>
+                            <select required name="License State " class="form-control">
+                                    <option selected>Select...</option>
+                                    <option>state</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Current Job Title</label>
+                            <input required type="text" class="form-control " name="Job Title">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-block">
+                            <label>Describe Your Driving Record</label>
+                            <input required type="text" class="form-control " name="Driving Record">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <button class="cta-button btn btn-fill btn-large square-button">
+                        Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
     <!--- Contact -->
     <section id="contact" class="contact">
         <div class="container text-center ">
@@ -163,12 +272,6 @@
                     <a class="mt-3 cta-button btn btn-large btn-ghost " href="mailto:example@gmail.com ">Contact Us</a>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section id="form" class="form ">
-        <div class="container text-center ">
-            <?php include 'form.php';?>
         </div>
     </section>
 
@@ -317,6 +420,7 @@
                     </div>
                 </form>
             </div>
+
         </div>
     </section>
 

@@ -9,7 +9,8 @@ qb.App = (function() {
         sizing();
 
         $(window).resize(); //on page load
-        modal();
+        //modal();
+        form();
     }
 
     function sizing() {
@@ -34,46 +35,34 @@ qb.App = (function() {
     }
 
 
-    function modal() {
-
-        // Get the modal
-        var modal = document.getElementById('applyModal');
-        var apply = document.getElementById('apply-form');
-        var thanks = document.getElementById('thanks');
-
-        // Get the button that opens the modal
-        var btn = document.getElementsByClassName('btn-apply');
-        var submit = document.getElementById('submit');
-
-        // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName('close-modal');
-
-        // When the user clicks on the button, open the modal 
-        for (i = 0; i < btn.length; i++) {
-            btn[i].onclick = function() {
-                modal.style.display = "block";
+    function form() {
+        //material contact form animation
+        $('.contact-form').find('.form-control').each(function() {
+            console.log("test");
+            var targetItem = $(this).parent();
+            if ($(this).val()) {
+                $(targetItem).find('label').css({
+                    'top': '10px',
+                    'fontSize': '14px'
+                });
             }
-        }
-
-        submit.onclick = function() {
-            submit.style.display = "none";
-            apply.style.display = "none";
-            thanks.style.display = "block";
-        }
-
-        // When the user clicks on <span> (x), close the modal
-        for (i = 0; i < span.length; i++) {
-            span[i].onclick = function() {
-                modal.style.display = "none";
+        })
+        $('.contact-form').find('.form-control').focus(function() {
+            $(this).parent('.input-block').addClass('focus');
+            $(this).parent().find('label').animate({
+                'top': '10px',
+                'fontSize': '14px'
+            }, 300);
+        })
+        $('.contact-form').find('.form-control').blur(function() {
+            if ($(this).val().length == 0) {
+                $(this).parent('.input-block').removeClass('focus');
+                $(this).parent().find('label').animate({
+                    'top': '25px',
+                    'fontSize': '18px'
+                }, 300);
             }
-        }
-
-        // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
+        })
     }
 
 

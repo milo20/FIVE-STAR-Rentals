@@ -6,13 +6,13 @@ body {
 /* ---> Fonts & Font Sizing <---------------------- */
 
 h1 {
-    font-size: 72px;
+    font-size: 66px;
     font-weight: 300;
     color: #fff;
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 400;
     color: #595959;
 }
@@ -105,17 +105,6 @@ p {
 }
 
 
-/* ---> Companies <------------------------------- */
-
-.companies {
-    background-color: #047490;
-}
-
-.companies .container {
-    padding: 40px 0;
-}
-
-
 /* ---> How it works <------------------------------- */
 
 #how-it-works {
@@ -180,6 +169,17 @@ p {
 }
 
 
+/* ---> Companies <------------------------------- */
+
+.companies {
+    background-color: #999999;
+}
+
+.companies .container {
+    padding: 40px 0;
+}
+
+
 /* ---> Apply <------------------------------- */
 
 #apply {
@@ -196,5 +196,19 @@ p {
 }
 
 #form {
-    background-color: antiquewhite;
+    background: linear-gradient(to right, #047490, #049490);
+    /*background-color: #047490;*/
+}
+
+.apply-text {
+    background-color: #fff;
+    padding: 100px 0 10px 0;
+}
+
+.apply-text h2 {
+    color: #037996;
+}
+
+.apply-text p {
+    color: #048daf;
 }
