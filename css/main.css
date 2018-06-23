@@ -128,17 +128,18 @@ button {
 
 .how-it-works h1 {
     color: #e6ac00;
+    font-size: 42px;
     text-transform: uppercase;
     font-weight: 400;
 }
 
 .how-it-works span {
-    font-size: 42px;
+    font-size: 32px;
 }
 
 .how-it-works p {
     border-left: thick solid #fed136;
-    padding: 30px 20px;
+    padding: 20px 20px;
     margin-left: 10px;
 }
 
