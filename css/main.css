@@ -16,8 +16,9 @@ h1 {
 
 h2 {
     font-size: 42px;
-    font-weight: 400;
     color: #595959;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -80,6 +81,11 @@ p {
 
 /* ---> Buttons <--------------------------- */
 
+button {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 .btn-fill {
     background-color: #047490;
     color: #fff;
@@ -87,7 +93,8 @@ p {
 
 .btn-ghost {
     border-color: #047490;
-    color: #047490
+    color: #047490;
+    background-color: transparent;
 }
 
 .btn-white {
@@ -211,5 +218,5 @@ p {
 }
 
 .apply-text p {
-    color: #9adae4;
+    color: #71ccda;
 }

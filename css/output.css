@@ -1,7 +1,8 @@
 .contact-form {
-  margin-top: 30px; }
+  margin-top: 0px; }
   .contact-form .input-block {
-    border-bottom: solid 2px #2fa4b6;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: solid 2px #047490;
     width: 100%;
     height: 60px;
     padding: 25px;
@@ -9,8 +10,8 @@
     margin-bottom: 20px;
     transition: all 0.3s ease-out; }
     .contact-form .input-block.focus {
-      background-color: #047490;
-      border-bottom: solid 1px #2d9dae; }
+      background-color: #fff;
+      border: solid 1px #046c86; }
     .contact-form .input-block.textarea {
       height: auto; }
       .contact-form .input-block.textarea .form-control {
@@ -24,7 +25,7 @@
       margin: 0;
       font-weight: 300;
       z-index: 1;
-      color: #85d4e0;
+      color: #737373;
       font-size: 18px;
       line-height: 10px; }
     .contact-form .input-block .form-control {
@@ -37,12 +38,12 @@
       position: relative;
       z-index: 2;
       font-size: 18px;
-      color: #85d4e0; }
+      color: #737373; }
     .contact-form .input-block .form-control:focus label {
       top: 0; }
   .contact-form .square-button {
-    background-color: rgba(255, 255, 255, 0.8);
-    color: #257f8d;
+    background-color: #fcb852;
+    color: #fff;
     font-size: 26px;
     text-transform: uppercase;
     font-weight: 700;
@@ -52,7 +53,7 @@
     border: none;
     width: 100%; }
     .contact-form .square-button:hover, .contact-form .square-button:focus {
-      background-color: white; }
+      background-color: #fdcd84; }
 
 /*----page styles---*/
 .contact-wrap {
@@ -178,6 +179,13 @@
 .mobile-menu--open {
   right: 0;
   opacity: 1; }
+
+.btn-fill:hover {
+  background-color: #0594b8; }
+
+.btn-ghost:hover {
+  background-color: #047490;
+  color: #fff; }
 
 @media (min-width: 768px) {
   .contact-wrap {

@@ -91,6 +91,7 @@ qb.App = (function() {
 
     function navLinkClick() {
         scrollToSection($(".nav-link"));
+
     }
 
     function scrollToSection(sourceClick) {
