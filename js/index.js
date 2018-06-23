@@ -11,6 +11,7 @@ qb.App = (function() {
         $(window).resize(); //on page load
         form();
         mobileNav();
+        navLinkClick();
     }
 
     function sizing() {
@@ -37,7 +38,6 @@ qb.App = (function() {
     function form() {
         //material contact form animation
         $('.contact-form').find('.form-control').each(function() {
-            console.log("test");
             var targetItem = $(this).parent();
             if ($(this).val()) {
                 $(targetItem).find('label').css({
@@ -70,7 +70,6 @@ qb.App = (function() {
         $('.mobile-nav-button').on('click', function() {
             // Toggles a class that slides the menu into view on the screen
             $('.mobile-menu').toggleClass('mobile-menu--open');
-            console.log("open");
             return false;
         });
 
@@ -81,17 +80,26 @@ qb.App = (function() {
 
         // When the user clicks anywhere outside of the modal, close it
         window.onclick = function(event) {
-
             if ($('.mobile-menu').hasClass('mobile-menu--open')) {
                 if (event.target != $('.mobile-menu')) {
-                    console.log("toggle");
                     $('.mobile-menu').toggleClass('mobile-menu--open');
                     $('.mobile-btn').toggleClass('cross');
-                    return false;
                 }
             }
-
         }
+    }
+
+    function navLinkClick() {
+        scrollToSection($(".nav-link"));
+    }
+
+    function scrollToSection(sourceClick) {
+        sourceClick.click(function(event) {
+            // animate scroll
+            $('html, body').animate({
+                scrollTop: ($(this.hash).offset().top - $(".navbar").height())
+            }, 600);
+        });
     }
 
     /* ------------------------------------------------- */
