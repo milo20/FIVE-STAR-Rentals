@@ -87,7 +87,12 @@ button {
 }
 
 .btn-fill {
-    background-color: #047490;
+    background-color: #256bc1;
+    color: #fff;
+}
+
+.btn-fill-yellow {
+    background-color: #fcad36;
     color: #fff;
 }
 
