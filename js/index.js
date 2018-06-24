@@ -12,11 +12,20 @@ qb.App = (function() {
         form();
         mobileNav();
         navLinkClick();
+        hero();
     }
 
     function sizing() {
         $(window).resize(function() {
             $("#header-hero").height($(window).height());
+        });
+    }
+
+
+    function hero() {
+        $(window).scroll(function() {
+            var scrolledY = $(window).scrollTop();
+            $('#header-hero').css('background-position', 'left ' + ((scrolledY)) + 'px');
         });
     }
 

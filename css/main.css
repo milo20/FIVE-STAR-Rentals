@@ -110,9 +110,13 @@ button {
 
 /* ---> Header <------------------------------- */
 
-#header-hero:before {
-    background: #000 url('../img/skyline-3.jpg') no-repeat fixed center;
+#header-hero {
+    background-image: url('../img/skyline-3.jpg');
+    background-attachment: scroll;
+    background-position: left top;
     background-size: cover;
+    width: 100%;
+    height: 300px;
 }
 
 .hero-text {
