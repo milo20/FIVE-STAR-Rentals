@@ -92,13 +92,13 @@ button {
 }
 
 .btn-fill-yellow {
-    background-color: #fcad36;
+    background-color: #fec301;
     color: #fff;
 }
 
 .btn-ghost {
-    border-color: #047490;
-    color: #047490;
+    border-color: #e4af01;
+    color: #e4af01;
     background-color: transparent;
 }
 
@@ -163,7 +163,7 @@ button {
 }
 
 .services h4 {
-    color: #047490;
+    color: #fec301;
 }
 
 

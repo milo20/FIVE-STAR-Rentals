@@ -58,8 +58,6 @@ $form-bg: #fff;
     }
     .square-button {
         // color: darken($primary-color, 10%);
-        background-color: #fcb852;
-        color: #fff;
         font-size: 26px;
         text-transform: uppercase;
         font-weight: 700;
@@ -73,7 +71,7 @@ $form-bg: #fff;
         width: 100%;
         &:hover,
         &:focus {
-            background-color: lighten(#fcb852, 10%);
+            // background-color: lighten(#fcb852, 10%);
         }
     }
 }
