@@ -2,7 +2,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #08182b;
+    background-color: #000;
 }
 
 
@@ -112,7 +112,7 @@ button {
 
 #header-hero {
     opacity: 0;
-    background-image: linear-gradient(to bottom, rgba(0, 38, 154, 0.6), rgba(0, 153, 153, 0.6)), url('../img/skyline-3.jpg');
+    background-image: linear-gradient(to bottom, rgba(50, 50, 50, 0.1), rgba(0, 0, 0, 0.5)), url('../img/skyline-3.jpg');
     background-attachment: scroll;
     background-position: left top;
     background-size: cover;
@@ -177,7 +177,7 @@ button {
 /* ---> Footer <------------------------------- */
 
 #footer {
-    background-color: #08182b;
+    background-color: #000;
 }
 
 .footer span {
@@ -218,15 +218,15 @@ button {
 }
 
 #form {
-    background-color: #1c5397;
+    background-color: #333333;
 }
 
 .apply-text {}
 
 .apply-text h2 {
-    color: #bfd6f3;
+    color: #bfbfbf;
 }
 
 .apply-text p {
-    color: #94bbeb;
+    color: #999999;
 }
