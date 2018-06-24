@@ -2,7 +2,7 @@ html,
 body {
     max-width: 100%;
     overflow-x: hidden;
-    background-color: #000;
+    background-color: #08182b;
 }
 
 
@@ -172,7 +172,7 @@ button {
 /* ---> Footer <------------------------------- */
 
 #footer {
-    background-color: #000;
+    background-color: #08182b;
 }
 
 .footer span {
@@ -213,16 +213,15 @@ button {
 }
 
 #form {
-    /* background: linear-gradient(to right, #047490, #049490); */
-    background-color: #047490;
+    background-color: #1c5397;
 }
 
 .apply-text {}
 
 .apply-text h2 {
-    color: #c2e9ef;
+    color: #bfd6f3;
 }
 
 .apply-text p {
-    color: #71ccda;
+    color: #94bbeb;
 }

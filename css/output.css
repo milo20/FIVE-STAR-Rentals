@@ -2,7 +2,7 @@
   margin-top: 0px; }
   .contact-form .input-block {
     background-color: rgba(255, 255, 255, 0.8);
-    border: solid 2px #047490;
+    border: solid 2px #94bbeb;
     width: 100%;
     height: 60px;
     padding: 25px;
@@ -11,7 +11,7 @@
     transition: all 0.3s ease-out; }
     .contact-form .input-block.focus {
       background-color: #fff;
-      border: solid 1px #046c86; }
+      border: solid 1px #8bb6e9; }
     .contact-form .input-block.textarea {
       height: auto; }
       .contact-form .input-block.textarea .form-control {
@@ -179,13 +179,6 @@
 .mobile-menu--open {
   right: 0;
   opacity: 1; }
-
-.btn-fill:hover {
-  background-color: #0594b8; }
-
-.btn-ghost:hover {
-  background-color: #047490;
-  color: #fff; }
 
 @media (min-width: 768px) {
   .contact-wrap {
