@@ -110,7 +110,7 @@ button {
 
 /* ---> Header <------------------------------- */
 
-#header-hero {
+#header-hero:before {
     background: #000 url('../img/skyline-3.jpg') no-repeat fixed center;
     background-size: cover;
 }
