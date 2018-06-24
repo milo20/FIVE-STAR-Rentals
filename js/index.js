@@ -5,28 +5,28 @@ var qb = {};
 qb.App = (function() {
 
     function initApp() {
+        hero();
         transparentNav();
-        sizing();
-
         $(window).resize(); //on page load
         form();
         mobileNav();
         navLinkClick();
-        hero();
-    }
-
-    function sizing() {
-        $(window).resize(function() {
-            $("#header-hero").height($(window).height());
-        });
     }
 
 
     function hero() {
+        $(window).resize(function() {
+            $("#header-hero").height($(window).height());
+        });
+
         $(window).scroll(function() {
             var scrolledY = $(window).scrollTop();
             $('#header-hero').css('background-position', 'left ' + ((scrolledY)) + 'px');
         });
+
+        $('.header-hero').animate({
+            'opacity': '1'
+        }, 3000);
     }
 
     function transparentNav() {
