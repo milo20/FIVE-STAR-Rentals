@@ -170,7 +170,15 @@ button {
 /* ---> Contact <------------------------------- */
 
 #contact {
-    background-color: #eee;
+    background-color: #333333;
+}
+
+.contact h2 {
+    color: #e6e6e6;
+}
+
+.contact p {
+    color: #cccccc;
 }
 
 
@@ -198,7 +206,7 @@ button {
 
 .companies {
     /*background-color: #047490;*/
-    background-color: #8c8c8c;
+    background-color: #333333;
 }
 
 .companies .container {
@@ -222,15 +230,13 @@ button {
 }
 
 #form {
-    background-color: #333333;
+    background-color: #eee;
 }
 
-.apply-text {}
-
 .apply-text h2 {
-    color: #bfbfbf;
+    color: #4d4d4d;
 }
 
 .apply-text p {
-    color: #999999;
+    color: #666666;
 }
