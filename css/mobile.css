@@ -25,4 +25,7 @@
         .nav-link {
             font-size: 32px !important;
         }
+        .footer img {
+            max-width: 30%;
+        }
     }
