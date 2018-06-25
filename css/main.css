@@ -189,6 +189,10 @@ button {
     width: 55px;
 }
 
+.footer img {
+    max-width: 15%;
+}
+
 
 /* ---> Companies <------------------------------- */
 
