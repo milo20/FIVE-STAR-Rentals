@@ -100,14 +100,13 @@ qb.App = (function() {
 
     function navLinkClick() {
         scrollToSection($(".nav-link"));
-
     }
 
     function scrollToSection(sourceClick) {
         sourceClick.click(function(event) {
             // animate scroll
             $('html, body').animate({
-                scrollTop: ($(this.hash).offset().top - $(".navbar").height())
+                scrollTop: ($(this.hash).offset().top - $(".navbar").height() - 15)
             }, 600);
         });
     }
