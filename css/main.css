@@ -74,7 +74,7 @@ p {
 .nav-link {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 10px 0 10px;
 }
 
@@ -83,7 +83,7 @@ p {
 
 button {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: bold;
 }
 
 .btn-fill {
@@ -128,7 +128,11 @@ button {
 /* ---> How it works <------------------------------- */
 
 #how-it-works {
-    background-color: #eee;
+    background-color: #333333;
+}
+
+.how-it-works h2 {
+    color: #e6e6e6;
 }
 
 .how-it-works h1 {
@@ -146,6 +150,11 @@ button {
     border-left: thick solid #fed136;
     padding: 20px 20px;
     margin-left: 10px;
+    color: #d9d9d9;
+}
+
+.how-it-works a {
+    color: #fed136;
 }
 
 
